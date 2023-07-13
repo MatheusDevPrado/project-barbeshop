@@ -1,0 +1,185 @@
+
+head {
+    margin: 0;
+    height: 0;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+nav {
+    width: 45%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+li {
+    font-family: Ubuntu,arial,sans-serif;
+    display: inline-block;
+    font-weight: bolder;
+    color: aliceblue;
+    font-size: 12px;
+    left: 15px;
+}
+li:hover {
+    color: yellow;
+}
+#logo {
+    width: 90px;
+    height: auto;
+}
+.agendar-contato {
+    background-color: #111c22;
+    color: aliceblue;
+    font-family: Ubuntu,arial,sans-serif;
+    font-size: 12px;
+    margin: 0 5px;
+    margin-top: 0px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    padding: 5px 7px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-left: 7px;  
+} 
+#img {
+    width: 600px;
+    height: 500px;
+}
+.img {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    border: 10px solid;
+    padding: 10px rgb(143, 143, 51);
+    background-color: rgb(241, 245, 12);
+
+}
+.banner {
+    display: none;
+}
+/* Os pontos indicadores */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}  
+.active {
+    background-color: black;
+} 
+/* fazendo animação */
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+} 
+/* imagens apagam a claridade*/
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+.container-flex {
+    margin-right: 30px;
+    margin-top: 40px;
+    border-top: 2px solid rgb(109, 109, 106);
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    height: 400px;         
+}
+#foto-img {
+    border-radius: 10%;
+    width: 150px;
+    height: 200px;
+}
+.foto-flex {
+    margin-top: 20px;
+    height: 250px;
+    width: 130px;
+}    
+p {
+    font-family: Ubuntu,arial,sans-serif;
+    margin-top: 0;
+    font-size: 15px;
+}
+.foto-servico-flex {
+    border-top: 2px solid rgb(109, 109, 106);
+    width: 100%;
+    height: auto;
+}
+.foto-servico {
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10%;
+    width: 300px;
+    height: auto;
+}
+.text-paragrafo {
+    margin-left: 20px;
+    font-family: Ubuntu,arial,sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+footer {
+    width: 100%;
+    background-color: black;
+    height: 150px;
+}
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-template-columns: 20% 80%;
+    padding: 20px;
+}
+.endereco {
+    display: flex;
+}
+#logo1 {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 50px;
+    height: 60px;
+}
+.paragrafo-rodape {
+    margin-top: 40px;
+    color: aliceblue;
+    font-family: Ubuntu,arial,sans-serif;
+    font-size: 10px;
+}
+.redes-sociais {
+    margin-top: 10px;
+    padding: 5px 20px 5px 10px;
+}
+.e {
+    margin-top: 10px;
+}
+#instagram {
+    width: 20px;
+    height: 25px;
+}
+#facebook {
+    width: 20px;
+    height: 25px;
+}
+span {
+    text-align: justify;
+    margin-left: 50px;
+    font-family: Ubuntu,arial,sans-serif;
+    font-size: 10px;
+    color: aliceblue;
+}
+
