@@ -1,0 +1,84 @@
+App.tsx (
+import { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [name, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+
+  return (
+    <div className="App">
+      <div className='container'>
+        <h2>Valide sua senha</h2>
+        <form 
+          action='https://61e036950f3bdb0017934eb0.mockapi.io/api/valid-passwords/results'
+          method='post'
+          >
+          <div>
+            <input  
+            type="text" 
+            placeholder='Nome' 
+            value={name}
+            onChange={Event => setNome(Event.target.value)}
+            required />
+          </div>
+          <div>
+            <input 
+            type="text" 
+            placeholder='Email' 
+            value={email}
+            onChange={Event => setEmail(Event.target.value)}
+            required/>
+          </div>
+          <div>
+            <input
+            type="number" 
+            placeholder='Senha' 
+            value={senha}
+            onChange={Event => setSenha(Event.target.value)}
+            required/> 
+          </div>
+          <button id='envia'value="Enviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+)
+
+
+
+  
+App.css (
+.container{
+  margin-top: 40px;
+  margin-left: 60px;
+  width: 90%;
+  height: auto;
+}
+h2 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+form {
+  width: 600px;
+  height: 300px;
+}
+input {
+  width: 80%;
+  height: 25px;
+  margin-top: 10px;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  width: 92px;
+  height: 28px;
+  margin: 30px;
+  margin-left: 66%;
+  display: flex;
+  padding: 5px 20px 5px 25px
+  
+}
